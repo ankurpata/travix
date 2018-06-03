@@ -1,0 +1,28 @@
+.task-details {
+  padding: 10px;
+  margin: 10px;
+  border-bottom: 1px solid gray; }
+  .task-details:last-child {
+    border: none; }
+  .task-details .description {
+    color: gray;
+    font-size: 1em;
+    transition: all 0.5s ease-in-out; }
+  .task-details .div-header {
+    display: table;
+    width: 100%; }
+    .task-details .div-header .title {
+      display: table-cell;
+      color: black;
+      font-size: 1.3em;
+      font-weight: normal;
+      cursor: pointer; }
+    .task-details .div-header .actions {
+      display: table-cell;
+      text-align: right;
+      cursor: pointer; }
+    .task-details .div-header .delete {
+      margin-left: 15px;
+      cursor: pointer; }
+      .task-details .div-header .delete:hover {
+        transform: rotate(360deg); }

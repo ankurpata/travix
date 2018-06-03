@@ -1,0 +1,51 @@
+.div-form {
+  color: white;
+  overflow: hidden; }
+  .div-form-update {
+    border: 1px solid #2ebaee;
+    border-radius: 4px;
+    padding: 10px; }
+  .div-form .task-input {
+    color: #54595d;
+    padding: 10px 10px;
+    margin-right: 2px;
+    font-size: 15px !important;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #5a64a7; }
+    @media screen and (max-width: 767px) {
+      .div-form .task-input {
+        margin-right: 0;
+        margin-bottom: 10px; } }
+    .div-form .task-input:active, .div-form .task-input:focus {
+      outline: none;
+      border-color: white; }
+    .div-form .task-input-text {
+      width: 20%; }
+      @media screen and (max-width: 767px) {
+        .div-form .task-input-text {
+          width: 100%; } }
+    .div-form .task-input-description {
+      width: 50%; }
+      @media screen and (max-width: 767px) {
+        .div-form .task-input-description {
+          width: 100%; } }
+    .div-form .task-input-submit {
+      cursor: pointer;
+      background: #3f4344;
+      color: white;
+      font-weight: bold;
+      font-size: 15px !important;
+      padding: 10px 15%;
+      border: none;
+      box-shadow: 9px 8px 20px -8px rgba(0, 0, 0, 0.75); }
+  .div-form .div-submit {
+    display: inline-block;
+    width: 20%;
+    text-align: right; }
+    @media screen and (max-width: 767px) {
+      .div-form .div-submit {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px; } }

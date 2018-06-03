@@ -1,0 +1,74 @@
+@import "./mixins.scss";
+
+.div-form {
+
+    color: white;
+    overflow: hidden;
+
+    &-update {
+        border: 1px solid #2ebaee;
+        border-radius: 4px;
+        padding: 10px;
+    }
+
+    .task-input {
+        color: #54595d;
+        padding: 10px 10px;
+        margin-right: 2px;
+        font-size: 15px !important;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid #5a64a7;
+
+        @include on-narrow {
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+
+        &:active,
+            &:focus {
+            outline: none;
+            border-color: white;
+        }
+
+        &-text {
+            width: 20%;
+
+            @include on-narrow {
+                width: 100%;
+            }
+        }
+
+        &-description {
+            width: 50%;
+
+            @include on-narrow {
+                width: 100%;
+            }
+        }
+
+        &-submit {
+            cursor: pointer;
+            background: #3f4344;
+            color: white;
+            font-weight: bold;
+            font-size: 15px !important;
+            padding: 10px 15%;
+            border: none;
+            box-shadow: 9px 8px 20px -8px rgba(0,0,0,0.75);
+        }
+    }
+
+    .div-submit {
+        display: inline-block;
+        width: 20%;
+        text-align: right;
+
+        @include on-narrow {
+            width: 100%;            
+            text-align: center;
+            margin-top: 20px;
+        }
+    }
+}
