@@ -1,8 +1,6 @@
 
 #Solution
 
-  start
-    npm-run-all -p watch-css start-js
   test
     react-scripts test --env=jsdom
 
