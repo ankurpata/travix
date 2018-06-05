@@ -1,3 +1,31 @@
+
+#Solution
+
+  start
+    npm-run-all -p watch-css start-js
+  test
+    react-scripts test --env=jsdom
+
+available via `npm run-script`:
+  build-css
+    node-sass-chokidar src/scss -o src/css
+  watch-css
+    npm run build-css && node-sass-chokidar src/scss -o src/css --watch --recursive
+  start-js
+    react-scripts start
+  build
+    npm run build-css && react-scripts build
+  eject
+    react-scripts eject
+  deploy
+    npm run build && node server.js
+  watch
+    npm-watch
+
+
+
+
+
 # Travix test
 
 Travix Front-End Tech Interview Test 
